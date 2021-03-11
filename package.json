@@ -1,0 +1,22 @@
+{
+  "name": "dr-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ignacio-Ramirez/Dr-Bot.git"
+  },
+  "author": "Ignacio Ramirez",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/Ignacio-Ramirez/Dr-Bot/issues"
+  },
+  "homepage": "https://github.com/Ignacio-Ramirez/Dr-Bot#readme",
+  "dependencies": {
+    "discord.js": "^12.5.1"
+  }
+}
