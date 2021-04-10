@@ -20,12 +20,12 @@ client.on('message', message => {
 
 
     
-    if (message.content === '_hola') {
-        message.channel.send('hola.');
+    if (message.content === '_hi') {
+        message.channel.send('hello.');
     
     }if (message.content === '_help') {
         message.channel.send(
-            '>>> \`\`\`yaml\n-Commands of Dr.Bot\`\`\`\n**Prefix** [ _ ] \n\n**Fun Commands** <:Denmo:757629613785612359>\n - hola\n - ||sex||\n - funaki\n\n **Server Commands** :notepad_spiral:\n - members\n\n**Utilities Commands** 📀 \n - my-info\n - my-avatar\n - roll\n - bot-server (The server of my developer) \n\n**Medical Asistance**<:Medical:819923098585399356>\n - Medic! (With out prefix) \n - medical-inventory or medical_inv\n\n**Secret Commands** :eyes:\n I wont tell you. '  );   
+            '>>> \`\`\`yaml\n-Commands of Dr.Bot\`\`\`\n**Prefix** [ _ ] \n\n**Fun Commands** <:Denmo:757629613785612359>\n - hi\n - ||sex||\n - funaki\n\n **Server Commands** :notepad_spiral:\n - members\n\n**Utilities Commands** 📀 \n - my-info\n - my-avatar\n - roll\n - bot-server (The server of my developer) \n\n**Medical Asistance**<:Medical:819923098585399356>\n - Medic! (With out prefix) \n - medical-inventory or medical_inv\n\n**Secret Commands** :eyes:\n I wont tell you. '  );   
     }if (message.content === '_members') {
 		message.channel.send('**Server name:** ' + message.guild.name + '\n**Total members:** ' + message.guild.memberCount);
    
@@ -43,7 +43,7 @@ client.on('message', message => {
         message.channel.send('My program won\'t let me run that command <:Reglas:819901637983731713>.');   
     
     }if (message.content === '_funaki') {
-    message.channel.send('https://tenor.com/view/funaki-funado-funa-funa3-gif-18802371');
+        message.channel.send('https://tenor.com/view/funaki-funado-funa-funa3-gif-18802371');
     
     }if (message.content === 'help') {
         message.channel.send('May I help you, I\'m Doctor <:Bot:819901638340378654> ***Provides medical and psychological help***');
