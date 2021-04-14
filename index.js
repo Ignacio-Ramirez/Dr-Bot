@@ -59,17 +59,18 @@ client.on('message', message => {
     }if (message.content === '_I wont tell you.') {
         message.channel.send ('Nice <a:pepehype:811573595305672704>')
     
-    }if (message.content === '_medical-inventory')  {
-        message.channel.send('>>> \`\`\`diff\n-Medical Inventory\`\`\`\n  -Defibrillator\n\n ***To use*** \`\`_use <item name>\`\`')
-
     }if (message.content === '_medical-inv')  {
-        message.channel.send('>>> \`\`\`diff\n-Medical Inventory\`\`\`\n  -Defibrillator\n\n ***To use*** \`\`_use <item name>\`\`')
+        message.channel.send('>>> \`\`\`diff\n-Medical Inventory\`\`\`\n-Defibrillator\n\n-Bandage\n\n **To use** \`\`_use <item name>\`\`')
+
+    }if (message.content === '_medical-inventory')  {
+        message.channel.send('>>> \`\`\`diff\n-Medical Inventory\`\`\`\n-Defibrillator\n\n-Bandage\n\n **To use** \`\`_use <item name>\`\`')
 
     }if (message.content === '_bot-info')  {
         message.channel.send('\`\`\`css\nName: "Dr-bot"\nVersion: 1.0.0\nDeveloper: "Ignacio Ramírez"\nGithub: "github.com/Ignacio-Ramirez/Dr-Bot"\nDiscord: "discord.gg/W4r32HSWsa"\`\`\`')
 
-       
-    }
+    }if (message.content === '_use bandage')
+
+        message.channel.send('Let me help you with that. Where do you want me to use the bandages?')
 
    
 });
