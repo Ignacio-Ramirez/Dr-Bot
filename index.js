@@ -25,7 +25,7 @@ client.on('message', message => {
     
     }if (message.content === '_help') {
         message.channel.send(
-            '>>> \`\`\`yaml\n-Commands of Dr.Bot\`\`\`\n**Prefix** [ _ ] \n\n**Fun Commands** <:Denmo:757629613785612359>\n - hi\n - ||sex||\n - funaki\n\n **Server Commands** :notepad_spiral:\n - members\n\n**Utilities Commands** 📀 \n - my-info\n - my-avatar\n - roll\n - bot-server (The server of my developer) \n\n**Medical Asistance**<:Medical:819923098585399356>\n - Medic! (With out prefix) \n - medical-inventory or medical_inv\n\n**Secret Commands** :eyes:\n I wont tell you. '  );   
+            '>>> \`\`\`yaml\n-Commands of Dr.Bot\`\`\`\n**Prefix** [ _ ] \n\n**Fun Commands** <:Denmo:757629613785612359>\n - hi\n - ||sex||\n - funaki\n\n **Server Commands** :notepad_spiral:\n - members\n\n**Utilities Commands** 📀 \n - my-info\n - my-avatar\n - roll\n - bot-info \n\n**Medical Asistance**<:Medical:819923098585399356>\n - Medic! (With out prefix) \n - medical-inventory or medical_inv\n\n**Secret Commands** :eyes:\n I wont tell you. '  );   
     }if (message.content === '_members') {
 		message.channel.send('**Server name:** ' + message.guild.name + '\n**Total members:** ' + message.guild.memberCount);
    
@@ -65,16 +65,16 @@ client.on('message', message => {
     }if (message.content === '_medical-inv')  {
         message.channel.send('>>> \`\`\`diff\n-Medical Inventory\`\`\`\n  -Defibrillator\n\n ***To use*** \`\`_use <item name>\`\`')
 
-    }if (message.content === '_bot-server')  {
-        message.channel.send('So you want to see where my developer hides?')
+    }if (message.content === '_bot-info')  {
+        message.channel.send('\`\`\`css\nName: "Dr-bot"\nVersion: 1.0.0\nDeveloper: "Ignacio Ramírez"\nGithub: "github.com/Ignacio-Ramirez/Dr-Bot"\nDiscord: "discord.gg/W4r32HSWsa"\`\`\`')
 
-        message.channel.send('https://discord.gg/UcaCNZq')
-   
+       
+    }
 
    
-}});
+});
     
     
 
-   // Test push 
+   
  // F5, node.js
