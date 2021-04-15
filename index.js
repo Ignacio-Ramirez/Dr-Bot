@@ -93,19 +93,16 @@ client.on('message', message => {
     
        message.channel.send(response).then().catch(console.error);
     
-    
-
-    
-
-}if (message.content === '_quiero-una-gotica-culona') {
+    }if (message.content === '_quiero-una-gotica-culona') {
     message.channel.send('Toma')
 
     message.channel.send('https://cdn.discordapp.com/attachments/823583026906398800/832229069666910208/joderquierounagoticaculona.mp4');
 
-   
+    }if (message.content === 'sus') {
 
-}
-    
+        message.react('😳');
+    }
+
 });
     
     
