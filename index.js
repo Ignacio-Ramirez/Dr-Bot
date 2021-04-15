@@ -17,8 +17,9 @@ const token = process.env.TOKEN;
 
 
 client.once('ready', () => {
-	console.log('Ready!');
-});
+	console.log('Started');});
+
+
 
 client.login(token);
 3
@@ -28,7 +29,7 @@ client.on('message', message => {
 
 
     
-    if (message.content === ('hi')) {
+    if (message.content === ('_hi')) {
         message.channel.send('hello.');
 
     }if (message.content === '_hello') {
@@ -37,7 +38,7 @@ client.on('message', message => {
     }if (message.content === '_help') {
 
         message.channel.send(
-            '>>> \`\`\`yaml\n-Commands of Dr.Bot\`\`\`\n**Prefix** [ _ ] \n\n**Fun Commands** <:Denmo:757629613785612359>\n - hello\n - hi\n - ||sex||\n - funaki\n - russian-roulette (If you get 6 you loose)\n - rr (Also Russian roulette)\n - bot\n\n **Server Commands** :notepad_spiral:\n - members\n\n**Utilities Commands** 📀 \n - my-info\n - my-avatar\n - roll\n - bot-info \n - test-dm\n\n**Medical Asistance**<:Medical:819923098585399356>\n - Medic! (With out prefix) \n - medical-inventory or medical_inv\n\n**Secret Commands** :eyes:\n I wont tell you. '  );   
+            '>>> \`\`\`yaml\n-Commands of Dr.Bot\`\`\`\n**Prefix** [ _ ] \n\n**Fun Commands** <:Denmo:757629613785612359>\n - hello\n - hi\n - ||sex||\n - funaki\n - russian-roulette (If you get 6 you loose)\n - rr (Also Russian roulette)\n - bot\n - f\n\n **Server Commands** :notepad_spiral:\n - members\n\n**Utilities Commands** 📀 \n - my-info\n - my-avatar\n - roll\n - bot-info \n - test-dm\n\n**Medical Asistance**<:Medical:819923098585399356>\n - Medic! (With out prefix) \n - medical-inventory or medical_inv\n\n**Secret Commands** :eyes:\n I wont tell you. '  );   
 
     }if (message.content === '_members') {
 		message.channel.send('**Server name:** ' + message.guild.name + '\n**Total members:** ' + message.guild.memberCount);
@@ -112,7 +113,7 @@ client.on('message', message => {
         message.author.send('¡Great Succes!');
     
     }if (message.content === '_f') {
-        message.author.send(`${message.author.tag} Pay respects.`)
+        message.channel.send(`${message.author.tag} Pay respects.`)
 
     }
 
