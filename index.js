@@ -25,7 +25,8 @@ client.on('message', message => {
     
     }if (message.content === '_help') {
         message.channel.send(
-            '>>> \`\`\`yaml\n-Commands of Dr.Bot\`\`\`\n**Prefix** [ _ ] \n\n**Fun Commands** <:Denmo:757629613785612359>\n - hi\n - ||sex||\n - funaki\n\n **Server Commands** :notepad_spiral:\n - members\n\n**Utilities Commands** 📀 \n - my-info\n - my-avatar\n - roll\n - bot-info \n\n**Medical Asistance**<:Medical:819923098585399356>\n - Medic! (With out prefix) \n - medical-inventory or medical_inv\n\n**Secret Commands** :eyes:\n I wont tell you. '  );   
+            '>>> \`\`\`yaml\n-Commands of Dr.Bot\`\`\`\n**Prefix** [ _ ] \n\n**Fun Commands** <:Denmo:757629613785612359>\n - hi\n - ||sex||\n - funaki\n - russian-roulette (If you get 6 you loose)\n - rr (Also Russian roulette)\n\n **Server Commands** :notepad_spiral:\n - members\n\n**Utilities Commands** 📀 \n - my-info\n - my-avatar\n - roll\n - bot-info \n\n**Medical Asistance**<:Medical:819923098585399356>\n - Medic! (With out prefix) \n - medical-inventory or medical_inv\n\n**Secret Commands** :eyes:\n I wont tell you. '  );   
+
     }if (message.content === '_members') {
 		message.channel.send('**Server name:** ' + message.guild.name + '\n**Total members:** ' + message.guild.memberCount);
    
@@ -34,6 +35,7 @@ client.on('message', message => {
     
     }if (message.content === '_my-avatar') {
         message.reply(message.author.displayAvatarURL());
+
     }if (message.content.toLowerCase().includes("_roll")) {
         var response = [Math.floor(Math.random() * ((100 - 1) + 1) + 1)];
     
@@ -72,7 +74,30 @@ client.on('message', message => {
 
         message.channel.send('Let me help you with that. Where do you want me to use the bandages?')
 
+        
+    if (message.content.toLowerCase().includes("_rr")) {
+            var response = [Math.floor(Math.random() * ((6 - 1) + 1) + 1)];
+        
+           message.channel.send(response).then().catch(console.error);
+    
+    }if (message.content.toLowerCase().includes("_russian-roulette")) {
+        var response = [Math.floor(Math.random() * ((6 - 1) + 1) + 1)];
+    
+       message.channel.send(response).then().catch(console.error);
+    
+    
+
+    
+
+}if (message.content === '_quiero-una-gotica-culona') {
+    message.channel.send('Toma')
+
+    message.channel.send('https://cdn.discordapp.com/attachments/823583026906398800/832229069666910208/joderquierounagoticaculona.mp4');
+
    
+
+}
+    
 });
     
     
