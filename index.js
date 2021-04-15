@@ -36,8 +36,6 @@ client.on('message', message => {
     
     }if (message.content === '_help') {
 
-        message.react('');
-
         message.channel.send(
             '>>> \`\`\`yaml\n-Commands of Dr.Bot\`\`\`\n**Prefix** [ _ ] \n\n**Fun Commands** <:Denmo:757629613785612359>\n - hello\n - hi\n - ||sex||\n - funaki\n - russian-roulette (If you get 6 you loose)\n - rr (Also Russian roulette)\n - bot\n\n **Server Commands** :notepad_spiral:\n - members\n\n**Utilities Commands** 📀 \n - my-info\n - my-avatar\n - roll\n - bot-info \n - test-dm\n\n**Medical Asistance**<:Medical:819923098585399356>\n - Medic! (With out prefix) \n - medical-inventory or medical_inv\n\n**Secret Commands** :eyes:\n I wont tell you. '  );   
 
@@ -113,11 +111,12 @@ client.on('message', message => {
         message.author.send('Test DM, \`\`🟩⬜⬜\`\`, \`\`🟩🟩⬜\`\`, \`\`🟩🟩🟩\`\`')
         message.author.send('¡Great Succes!');
     
+    }if (message.content === '_f') {
+        message.author.send(`${message.author.tag} Pay respects.`)
+
     }
 
 });
     
    
  // F5, node.js
-
-;
