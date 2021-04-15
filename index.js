@@ -30,10 +30,13 @@ client.on('message', message => {
     
     if (message.content === '_hi') {
         message.channel.send('hello.');
+
+    }if (message.content === '_hello') {
+        message.channel.send('hello.');
     
     }if (message.content === '_help') {
         message.channel.send(
-            '>>> \`\`\`yaml\n-Commands of Dr.Bot\`\`\`\n**Prefix** [ _ ] \n\n**Fun Commands** <:Denmo:757629613785612359>\n - hi\n - ||sex||\n - funaki\n - russian-roulette (If you get 6 you loose)\n - rr (Also Russian roulette)\n\n **Server Commands** :notepad_spiral:\n - members\n\n**Utilities Commands** 📀 \n - my-info\n - my-avatar\n - roll\n - bot-info \n\n**Medical Asistance**<:Medical:819923098585399356>\n - Medic! (With out prefix) \n - medical-inventory or medical_inv\n\n**Secret Commands** :eyes:\n I wont tell you. '  );   
+            '>>> \`\`\`yaml\n-Commands of Dr.Bot\`\`\`\n**Prefix** [ _ ] \n\n**Fun Commands** <:Denmo:757629613785612359>\n - hello\n - hi\n - ||sex||\n - funaki\n - russian-roulette (If you get 6 you loose)\n - rr (Also Russian roulette)\n - bot\n\n **Server Commands** :notepad_spiral:\n - members\n\n**Utilities Commands** 📀 \n - my-info\n - my-avatar\n - roll\n - bot-info \n\n**Medical Asistance**<:Medical:819923098585399356>\n - Medic! (With out prefix) \n - medical-inventory or medical_inv\n\n**Secret Commands** :eyes:\n I wont tell you. '  );   
 
     }if (message.content === '_members') {
 		message.channel.send('**Server name:** ' + message.guild.name + '\n**Total members:** ' + message.guild.memberCount);
@@ -101,9 +104,12 @@ client.on('message', message => {
     }if (message.content === 'sus') {
 
         message.react('😳');
-    }
+    
+    }if (message.content === '_bot') 
+    
+        message.channel.send('<:Bot:819901638340378654>');
 
-});
+    });
     
     
 
