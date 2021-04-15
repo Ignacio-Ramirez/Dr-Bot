@@ -15,28 +15,31 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const token = process.env.TOKEN;
 
-let prefix = '_';
 
 client.once('ready', () => {
 	console.log('Ready!');
 });
 
 client.login(token);
+3
 
 client.on('message', message => {
 	console.log(message.content);
 
 
     
-    if (message.content === '_hi') {
+    if (message.content === ('hi')) {
         message.channel.send('hello.');
 
     }if (message.content === '_hello') {
         message.channel.send('hello.');
     
     }if (message.content === '_help') {
+
+        message.react('');
+
         message.channel.send(
-            '>>> \`\`\`yaml\n-Commands of Dr.Bot\`\`\`\n**Prefix** [ _ ] \n\n**Fun Commands** <:Denmo:757629613785612359>\n - hello\n - hi\n - ||sex||\n - funaki\n - russian-roulette (If you get 6 you loose)\n - rr (Also Russian roulette)\n - bot\n\n **Server Commands** :notepad_spiral:\n - members\n\n**Utilities Commands** 📀 \n - my-info\n - my-avatar\n - roll\n - bot-info \n\n**Medical Asistance**<:Medical:819923098585399356>\n - Medic! (With out prefix) \n - medical-inventory or medical_inv\n\n**Secret Commands** :eyes:\n I wont tell you. '  );   
+            '>>> \`\`\`yaml\n-Commands of Dr.Bot\`\`\`\n**Prefix** [ _ ] \n\n**Fun Commands** <:Denmo:757629613785612359>\n - hello\n - hi\n - ||sex||\n - funaki\n - russian-roulette (If you get 6 you loose)\n - rr (Also Russian roulette)\n - bot\n\n **Server Commands** :notepad_spiral:\n - members\n\n**Utilities Commands** 📀 \n - my-info\n - my-avatar\n - roll\n - bot-info \n - test-dm\n\n**Medical Asistance**<:Medical:819923098585399356>\n - Medic! (With out prefix) \n - medical-inventory or medical_inv\n\n**Secret Commands** :eyes:\n I wont tell you. '  );   
 
     }if (message.content === '_members') {
 		message.channel.send('**Server name:** ' + message.guild.name + '\n**Total members:** ' + message.guild.memberCount);
@@ -82,7 +85,6 @@ client.on('message', message => {
         message.channel.send('\`\`\`css\nName: "Dr-bot"\nVersion: 1.0.0\nDeveloper: "Ignacio Ramírez"\nGithub: "github.com/Ignacio-Ramirez/Dr-Bot"\nDiscord: "discord.gg/W4r32HSWsa"\`\`\`')
 
     }if (message.content === '_use bandage')
-
         message.channel.send('Let me help you with that. Where do you want me to use the bandages?')
 
         
@@ -102,16 +104,20 @@ client.on('message', message => {
     message.channel.send('https://cdn.discordapp.com/attachments/823583026906398800/832229069666910208/joderquierounagoticaculona.mp4');
 
     }if (message.content === 'sus') {
-
         message.react('😳');
     
-    }if (message.content === '_bot') 
-    
+    }if (message.content === '_bot') {
         message.channel.send('<:Bot:819901638340378654>');
 
-    });
+    }if (message.content === '_test-dm') {
+        message.author.send('Test DM, \`\`🟩⬜⬜\`\`, \`\`🟩🟩⬜\`\`, \`\`🟩🟩🟩\`\`')
+        message.author.send('¡Great Succes!');
     
-    
+    }
 
+});
+    
    
  // F5, node.js
+
+;
