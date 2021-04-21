@@ -17,7 +17,7 @@ const token = process.env.TOKEN;
 
 
 client.once('ready', () => {
-	console.log('Started');});
+	console.log('¡Great Success!');});
 
 
 
@@ -110,7 +110,8 @@ client.on('message', message => {
 
     }if (message.content === '_test-dm') {
         message.author.send('Test DM, \`\`🟩⬜⬜\`\`, \`\`🟩🟩⬜\`\`, \`\`🟩🟩🟩\`\`')
-        message.author.send('¡Great Succes!');
+        message.author.send('¡Great Success!')
+        console.log('Another test DM completed');
     
     }if (message.content === '_f') {
         message.channel.send(`${message.author.tag} Pay respects.`)
